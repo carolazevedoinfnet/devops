@@ -15,6 +15,7 @@
     <description>devops</description>
     <properties>
         <java.version>19</java.version>
+        <spring-cloud.version>2023.0.1</spring-cloud.version>
         <mockito.version>5.2.0</mockito.version>
         <hamcrest.version>2.2</hamcrest.version>
         <maven.compiler.target>19</maven.compiler.target>
@@ -38,7 +39,15 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.mysql</groupId>
@@ -78,6 +87,7 @@
 
 
 
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -99,7 +109,6 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -129,6 +138,7 @@
 
 
     </dependencies>
+
 
     <build>
         <plugins>
