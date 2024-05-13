@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://devops-db-server.mysql.database.azure.com/devops?useTimezone=true&serverTimezone=UTC
+    url: jdbc:mysql://carol-devops-db.mysql.database.azure.com/devops?useTimezone=true&serverTimezone=UTC
     username: caag
     password: Carolina76
   jpa:
